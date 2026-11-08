@@ -75,4 +75,4 @@ bash scripts/econ.sh mark ms.md <item> human-confirmed <who>   # 人工确认
 ## 来源与改动
 闸门脚本与 references 取自原仓库（`scripts/gates/{econ-checklist,verify-*,econ-verify-all,version-check,feedback-log,safety-scan}.sh`、`scripts/guard/*` 原样复制）；
 新增：`econ.sh`、`doctor`、`bib-check`、`seed-check`、`accept-check`、`feedback-triage`、`regress-samples`、`init-project`。
-旧的 35 skill 套件（含社会学/质性/多智能体编排/trace 机制）已从主线移除，完整保留在标签 `legacy-v1.0.0`：`git checkout legacy-v1.0.0`。
+
