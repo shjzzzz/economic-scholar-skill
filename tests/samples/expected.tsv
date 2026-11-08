@@ -1,0 +1,12 @@
+file	tool	expect_rc	marker
+good-applied.md	checklist	0	PASS  DiD: heterogeneity-robust
+bad-twfe.md	checklist	1	FAIL  DiD: heterogeneity-robust estimator
+bad-twfe.md	checklist	1	FAIL  standard errors
+good-theory.md	checklist	0	PASS  theory: propositions
+bad-theory.md	checklist	1	FAIL  theory: assumptions
+good-seed.R	seed	0	PASS
+bad-seed.R	seed	1	FAIL
+clock-seed.R	seed	1	clock-based
+good-seed.py	seed	0	PASS
+bad-seed.py	seed	1	FAIL
+no-random.R	seed	0	N/A

@@ -1,0 +1,6 @@
+{
+  "name": "econ-paper",
+  "description": "Economics literature-to-paper workflow for Claude Code: literature, question, identification, analysis, writing, verification, submission — with runnable gates (citation checks, identification checklist, seed check, four-state verification ledger).",
+  "version": "0.1.0",
+  "keywords": ["economics", "literature-review", "causal-inference", "paper-writing", "citation-verification", "taxation", "public-finance"]
+}

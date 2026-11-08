@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "shjzzzz",
+  "description": "Claude Code skills for economics research: from literature to a verified, submission-ready paper.",
+  "owner": { "name": "shjzzzz" },
+  "plugins": [
+    {
+      "name": "econ-paper",
+      "displayName": "Econ Paper",
+      "source": "./",
+      "description": "Economics literature-to-paper workflow: literature, question, identification, analysis, writing, verification, submission, with runnable gates (citation checks, identification checklist, seed check, four-state verification ledger).",
+      "homepage": "https://github.com/shjzzzz/economic-scholar-skill",
+      "repository": "https://github.com/shjzzzz/economic-scholar-skill",
+      "category": "research",
+      "keywords": ["economics", "literature-review", "causal-inference", "econometrics", "paper-writing", "citation-verification", "taxation", "public-finance"]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+id	stage	level	criterion	enforcement	check	source	confirmed
+A01	writing	must	No fabricated citation (zero tolerance)	auto	scripts/gates/verify-citations.sh	original CLAUDE.md Citation Rules	no
+A02	literature	must	Every in-text citation has a matching bibliography entry	auto	scripts/gates/verify-citation-existence.sh	original CLAUDE.md Citation Rules	no
+A03	literature	must	Every bib entry carries a doi or url and no duplicate keys	auto	scripts/gates/bib-check.sh	new	no
+A04	verify	must	The cited source actually supports the claim	human	citation-support	econ-verify-all item	no
+A05	identification	must	Staggered DiD uses a heterogeneity-robust estimator, not bare TWFE	auto-weak	scripts/gates/econ-checklist.sh	original CLAUDE.md User Preferences	no
+A06	identification	must	Identification assumptions stated; testable ones tested	auto-weak	scripts/gates/econ-checklist.sh	original CLAUDE.md User Preferences	no
+A07	identification	must	Identification is actually valid	human	identification	econ-checklist HUMAN-REVIEW	no
+A08	analysis	must	Random seeds fixed in simulation and resampling	auto-weak	scripts/gates/seed-check.sh	original CLAUDE.md User Preferences	no
+A09	analysis	must	Standard errors and clustering stated	auto-weak	scripts/gates/econ-checklist.sh	econ-checklist.sh	no
+A10	writing	must	Economic magnitude interpreted, not only stars	auto-weak	scripts/gates/econ-checklist.sh	original CLAUDE.md User Preferences	no
+A11	question	must	Proofs reported as needs-human-review, never as verified	human	proofs	original CLAUDE.md Theory depth	no
+A12	submit	must	Journal word limit / fee / acceptance rate come from the official page, not memory	none	-	original CLAUDE.md User Preferences	no
+A13	verify	must	Status wording is exactly one of the four verification states	auto	scripts/gates/econ-verify-all.sh	original CLAUDE.md User Preferences	no
+A14	analysis	must	Raw data is never read unless cleared in the safety sidecar	auto	scripts/guard/pretooluse-data-guard.sh	original CLAUDE.md Data Safety	no
+A15	writing	must	Drafts are never overwritten (versioned save path)	auto-weak	scripts/gates/version-check.sh	original CLAUDE.md File Versioning	no
+A16	all	must	Package runs on the user OS (LF endings, names match, referenced files exist)	auto	scripts/gates/doctor.sh	baseline run 2026-11-08	no
+A17	writing	prefer	Figures use one consistent project theme	none	-	original CLAUDE.md Figures	no

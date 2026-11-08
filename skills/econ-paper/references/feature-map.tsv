@@ -1,0 +1,8 @@
+stage	track	skill	input	output	gate	human_gate	ext
+literature	A,T	econ-literature	question + keywords	search-log.tsv, lit-map.md, refs.bib	bib-check.sh	judge the gap	qje-literature-positioning;cie-literature-review
+question	A,T	econ-question	literature map	RQ, hypotheses, conceptual framework	-	choose the RQ; proofs needs-human-review	qje-theory-model;cie-fit-positioning
+identification	A	econ-identification	RQ + data description	strategy, assumptions, design	econ-checklist.sh	validity of identification	qje-identification;cie-did-identification
+analysis	A	econ-analysis	raw data + design	cleaned data, scripts, tables, figures	seed-check.sh	read the results	qje-robustness;cie-robustness
+writing	A,T	econ-writing	results + literature	manuscript sections	version-check.sh	argument and voice	qje-writing-style;cie-tables-figures
+verify	A,T	econ-verify	manuscript + bib	receipt ledger	econ-verify-all.sh	identification; proofs; citation-support	-
+submit	A,T	econ-submit	verified manuscript	cover letter, referee risks, response letter	-	journal facts from the official page; final sign-off	qje-submission;cie-submission

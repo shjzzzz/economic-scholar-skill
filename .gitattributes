@@ -1,0 +1,11 @@
+# Shell/Python tools and skill text must be LF on every OS: a CRLF checkout makes
+# bash fail with "set: pipefail: invalid option name" (seen on the Windows checkout).
+* text=auto
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.tsv text eol=lf
+*.json text eol=lf
+*.ndjson text eol=lf
+*.toml text eol=lf
+.env* text eol=lf
